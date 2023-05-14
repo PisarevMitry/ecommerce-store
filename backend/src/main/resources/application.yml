@@ -1,0 +1,40 @@
+server:
+    error:
+        include-binding-errors: always
+        include-message: always
+    port: 8443
+    ssl:
+        enabled: true
+        key-alias: tls
+        key-password: password
+        key-store: classpath:https.p12
+        key-store-password: password
+        key-store-type: PKCS12
+spring:
+    datasource:
+        password: postgres
+        url: jdbc:postgresql://localhost:5432/postgres
+        username: postgres
+    jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                format-sql: true
+        show-sql: true
+    mail:
+        host: smtp.googlemail.com
+        password: ximetoslmrfvcglu
+        port: 587
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    connectiontimeout: 5000
+                    socketFactory:
+                        class: javax.net.ssl.SSLSocketFactory
+                        port: 587
+                    starttls:
+                        enable: true
+                    timeout: 5000
+                    writetimeout: 5000
+        username: sdvkjsfnvkjdfvnjerferfwerfewfw@gmail.com
