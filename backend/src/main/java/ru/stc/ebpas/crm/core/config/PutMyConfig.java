@@ -11,18 +11,18 @@ import ru.stc.ebpas.crm.core.repository.UserInfoRepository;
 @Configuration
 public class PutMyConfig {
 
-    @Bean
-    CommandLineRunner commandLineRunner(UserInfoRepository userInfoRepository){
-        return args -> {
-            UserInfo u1 = new UserInfo(
-                 "Pisarev",
-                 "Dmitrii",
-                 "d.pisarev.03@gmail.com",
-                 new BCryptPasswordEncoder().encode("password"),
-                    UserRole.ADMIN,
-                    true
-            );
-            userInfoRepository.save(u1);
-        };
-    }
+//    @Bean
+//    CommandLineRunner commandLineRunner(UserInfoRepository userInfoRepository){
+//        return args -> {
+//            UserInfo u1 = new UserInfo(
+//                 "Pisarev",
+//                 "Dmitrii",
+//                 "d.pisarev.03@gmail.com",
+//                 new BCryptPasswordEncoder().encode("password"),
+//                    UserRole.ADMIN,
+//                    true
+//            );
+//            userInfoRepository.save(u1);
+//        };
+//    }
 }

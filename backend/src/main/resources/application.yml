@@ -12,9 +12,9 @@ server:
         key-store-type: PKCS12
 spring:
     datasource:
-        password: postgres
-        url: jdbc:postgresql://localhost:5432/postgres
-        username: postgres
+        password: PoCOTQw0ntmWiwwXNDnkMs0P94dH9uc9
+        url: jdbc:postgresql://dpg-chgf3ajhp8u065u50u5g-a.oregon-postgres.render.com/ebpas_crm_core
+        username: ebpas_user
     jpa:
         properties:
             hibernate:
