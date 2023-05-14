@@ -37,7 +37,7 @@ const CheckoutPage = () => {
 
         const token = localStorage.getItem("token")
         try {
-            const route = "https://localhost:8443/api/v1/cart/all"
+            const route = "https://ebpas-crm-core-backend.onrender.com/api/v1/cart/all"
             const resp = await axios.post(route, data, {
                 // mode: "no-cors",
                 // withCredentials:true,

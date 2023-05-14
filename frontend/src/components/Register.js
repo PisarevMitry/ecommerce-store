@@ -37,7 +37,7 @@ const Register = () => {
     const send = async values => {
         try {
             putNotification("Registering...")
-            const resp = await axios.post("https://localhost:8443/api/v1/registration", {
+            const resp = await axios.post("https://ebpas-crm-core-backend.onrender.com/api/v1/registration", {
                 firstName: values.firstname, lastName: values.lastname, email: values.email, password: values.password,
             })
 

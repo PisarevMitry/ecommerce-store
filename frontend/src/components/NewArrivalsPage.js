@@ -11,12 +11,12 @@ const NewArrivalsPage = () => {
     const [pref, setPref] = React.useState("1")
 
     const fetchData = async () => {
-        let route = 'https://localhost:8443/api/v1/products/arrival?arrival=new';
+        let route = 'https://ebpas-crm-core-backend.onrender.com/api/v1/products/arrival?arrival=new';
 
         if (pref === "2") {
-            route = 'https://localhost:8443/api/v1/products/specific?sex=male&arrival=new'
+            route = 'https://ebpas-crm-core-backend.onrender.com/api/v1/products/specific?sex=male&arrival=new'
         } else if (pref === "3") {
-            route = 'https://localhost:8443/api/v1/products/specific?sex=female&arrival=new'
+            route = 'https://ebpas-crm-core-backend.onrender.com/api/v1/products/specific?sex=female&arrival=new'
         }
 
         try {

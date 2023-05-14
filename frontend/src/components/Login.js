@@ -25,7 +25,7 @@ const Login = () => {
     const send = async values => {
         try {
             putNotification("Logging in...")
-            const resp = await axios.post("https://localhost:8443/api/v1/login", {
+            const resp = await axios.post("https://ebpas-crm-core-backend.onrender.com/api/v1/login", {
                 email: values.username, password: values.password
             })
 

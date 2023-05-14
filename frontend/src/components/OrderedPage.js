@@ -20,7 +20,7 @@ const OrderedPage = () => {
         }
         const token = localStorage.getItem("token")
         try {
-            const route = "https://localhost:8443/api/v1/cart/"
+            const route = "https://ebpas-crm-core-backend.onrender.com/api/v1/cart/"
             const resp = await axios.get(route, {
                 headers: {
                     Authorization: token

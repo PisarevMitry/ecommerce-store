@@ -9,7 +9,7 @@ const LandingPage = () => {
     const send = async () => {
         try {
             putNotification("Subscribing...")
-            const resp = await axios.post("https://localhost:8443/api/v1/newsletter", {email: email})
+            const resp = await axios.post("https://ebpas-crm-core-backend.onrender.com/api/v1/newsletter", {email: email})
 
             if (resp.status === 200) {
                 putNotification(resp.data)

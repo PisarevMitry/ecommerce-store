@@ -15,16 +15,16 @@ const Store = () => {
     const [pref, setPref] = React.useState("1")
 
     const fetchData = async () => {
-        let route = 'https://localhost:8443/api/v1/products/all';
+        let route = 'https://ebpas-crm-core-backend.onrender.com/api/v1/products/all';
 
         if (pref === "2") {
-            route = 'https://localhost:8443/api/v1/products/gender?sex=male'
+            route = 'https://ebpas-crm-core-backend.onrender.com/api/v1/products/gender?sex=male'
         } else if (pref === "3") {
-            route = 'https://localhost:8443/api/v1/products/gender?sex=female'
+            route = 'https://ebpas-crm-core-backend.onrender.com/api/v1/products/gender?sex=female'
         } else if (pref === "4") {
-            route = 'https://localhost:8443/api/v1/products/arrival?arrival=new'
+            route = 'https://ebpas-crm-core-backend.onrender.com/api/v1/products/arrival?arrival=new'
         } else if (pref === 5) {
-            route = 'https://localhost:8443/api/v1/products/arrival?arrival=cheap'
+            route = 'https://ebpas-crm-core-backend.onrender.com/api/v1/products/arrival?arrival=cheap'
         }
         try {
             const resp = await axios.get(route);

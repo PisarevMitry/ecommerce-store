@@ -14,12 +14,12 @@ const DiscounterStorePage = () => {
     const [pref, setPref] = React.useState("1")
 
     const fetchData = async () => {
-        let route = 'https://localhost:8443/api/v1/products/arrival?arrival=cheap';
+        let route = 'https://ebpas-crm-core-backend.onrender.com/api/v1/products/arrival?arrival=cheap';
 
         if (pref === "2") {
-            route = 'https://localhost:8443/api/v1/products/specific?sex=male&arrival=cheap'
+            route = 'https://ebpas-crm-core-backend.onrender.com/api/v1/products/specific?sex=male&arrival=cheap'
         } else if (pref === "3") {
-            route = 'https://localhost:8443/api/v1/products/specific?sex=female&arrival=cheap'
+            route = 'https://ebpas-crm-core-backend.onrender.com/api/v1/products/specific?sex=female&arrival=cheap'
         }
 
         try {
